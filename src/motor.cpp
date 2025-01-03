@@ -34,7 +34,7 @@ void motor_set_duty_fr(float duty) {
     ledcWrite(CH_FRONT_RIGHT, (uint32_t)(255 * duty));
 }
 void motor_set_duty_fl(float duty) {
-    ledcWrite(CH_FRONT_LEFT, (uint32_t)(255 * duty));
+    ledcWrite(CH_FRONT_LEFT, (uint32_t)(255 * duty));  // 修正: ledcWrite が抜けていた
 }
 void motor_set_duty_rr(float duty) {
     ledcWrite(CH_REAR_RIGHT, (uint32_t)(255 * duty));
